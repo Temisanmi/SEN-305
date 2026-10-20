@@ -11,7 +11,6 @@ form.addEventListener("submit", function (event) {
     const hostel = document.getElementById("hostel").value;
     const gender = document.getElementById("gender").value;
     const email = document.getElementById("email").value.trim();
-
     if (
         firstName === "" ||
         lastName === "" ||
@@ -25,6 +24,14 @@ form.addEventListener("submit", function (event) {
         message.className = "error";
         return;
     }
+
+    console.log("First Name:", firstName);
+    console.log("Last Name:", lastName);
+    console.log("Matric Number:", matricNumber);
+    console.log("Level:", level);
+    console.log("Hostel:", hostel);
+    console.log("Gender:", gender);
+    console.log("Email:", email);
 
     message.textContent =
         `Biodata submitted successfully! Welcome, ${firstName} ${lastName}.`;
