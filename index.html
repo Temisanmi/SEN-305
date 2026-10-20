@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Biodata Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Student Biodata</h1>
+        <p class="subtitle">Please fill in your details below.</p>
+
+        <form id="biodataForm">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="matricNumber">Matric Number</label>
+                <input type="text" id="matricNumber" name="matricNumber" placeholder="Enter your matric number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="level">Level</label>
+                <select id="level" name="level" required>
+                    <option value="">Select your level</option>
+                    <option value="100">100 Level</option>
+                    <option value="200">200 Level</option>
+                    <option value="300">300 Level</option>
+                    <option value="400">400 Level</option>
+                    <option value="500">500 Level</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="hostel">Hostel</label>
+                <select id="hostel" name="hostel" required>
+                    <option value="">Select your hostel</option>
+                    <option value="Male Hostel">Male Hostel</option>
+                    <option value="Female Hostel">Female Hostel</option>
+                    <option value="Off-Campus">Off-Campus</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <button type="submit">Submit Biodata</button>
+
+            <p id="message" role="status"></p>
+        </form>
+    </div>
+</body>
+</html>
