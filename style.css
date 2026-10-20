@@ -26,7 +26,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #4338ca;
+    color: #0de342;
     margin-bottom: 10px;
 }
 
@@ -60,14 +60,14 @@ input,select {
 }
 
 input:focus,select:focus {
-    border-color: #4338ca;
+    border-color: #0de342;
     box-shadow: 0 0 0 3px rgba(67, 56, 202, 0.12);
 }
 
 button {
     width: 100%;
     padding: 13px;
-    background-color: #4338ca;
+    background-color: #0de342;
     color: #ffffff;
     border: none;
     border-radius: 6px;
@@ -78,7 +78,7 @@ button {
 }
 
 button:hover {
-    background-color: #3730a3;
+    background-color: #046f1f;
 }
 
 button:active {
