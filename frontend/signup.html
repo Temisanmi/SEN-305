@@ -13,71 +13,89 @@
         <h1>Create Account</h1>
         <p class="subtitle">Fill in your details below.</p>
 
-        <form id="signupForm">
+        <form id="signupForm" novalidate>
             <div class="grid">
                 <div class="form-group">
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required>
+                    <input type="text" id="firstName" name="firstName" maxlength="25" required>
+                    <small class="field-error" data-error-for="firstName"></small>
                 </div>
                 <div class="form-group">
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <input type="text" id="lastName" name="lastName" maxlength="25" required>
+                    <small class="field-error" data-error-for="lastName"></small>
                 </div>
                 <div class="form-group">
                     <label for="matricNumber">Matric Number</label>
                     <input type="text" id="matricNumber" name="matricNumber" required>
+                    <small class="field-error" data-error-for="matricNumber"></small>
                 </div>
                 <div class="form-group">
                     <label for="department">Department</label>
-                    <input type="text" id="department" name="department" required>
+                    <select id="department" name="department" required>
+                        <option value="">Select department</option>
+                        <option value="SOFTWARE_ENGINEERING">Software Engineering</option>
+                        <option value="COMPUTER_SCIENCE">Computer Science</option>
+                        <option value="DATA_SCIENCE">Data Science</option>
+                        <option value="ARTIFICIAL_INTELLIGENCE">Artificial Intelligence</option>
+                        <option value="CYBER_SECURITY">Cyber Security</option>
+                    </select>
+                    <small class="field-error" data-error-for="department"></small>
                 </div>
                 <div class="form-group">
                     <label for="dob">Date of Birth</label>
                     <input type="date" id="dob" name="dob" required>
+                    <small class="field-error" data-error-for="dob"></small>
                 </div>
                 <div class="form-group">
                     <label for="gender">Gender</label>
                     <select id="gender" name="gender" required>
                         <option value="">Select gender</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
+                        <option value="MALE">Male</option>
+                        <option value="FEMALE">Female</option>
                     </select>
+                    <small class="field-error" data-error-for="gender"></small>
                 </div>
                 <div class="form-group">
                     <label for="level">Level</label>
                     <select id="level" name="level" required>
                         <option value="">Select level</option>
-                        <option value="100">100 Level</option>
-                        <option value="200">200 Level</option>
-                        <option value="300">300 Level</option>
-                        <option value="400">400 Level</option>
-                        <option value="500">500 Level</option>
+                        <option value="LEVEL_100">100 Level</option>
+                        <option value="LEVEL_200">200 Level</option>
+                        <option value="LEVEL_300">300 Level</option>
+                        <option value="LEVEL_400">400 Level</option>
                     </select>
+                    <small class="field-error" data-error-for="level"></small>
                 </div>
                 <div class="form-group">
                     <label for="hostel">Hostel</label>
                     <select id="hostel" name="hostel" required>
                         <option value="">Select hostel</option>
-                        <option value="Male Hostel">Male Hostel</option>
-                        <option value="Female Hostel">Female Hostel</option>
-                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="MALE_HOSTEL">Male Hostel</option>
+                        <option value="FEMALE_HOSTEL">Female Hostel</option>
+                        <option value="OFF_CAMPUS">Off-Campus</option>
                     </select>
+                    <small class="field-error" data-error-for="hostel"></small>
                 </div>
                 <div class="form-group">
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" required>
+                    <small class="field-error" data-error-for="email"></small>
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="phone" required>
+                    <small class="field-error" data-error-for="phone"></small>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required>
+                    <input type="password" id="password" name="password" autocomplete="new-password" required>
+                    <small class="field-error" data-error-for="password"></small>
                 </div>
                 <div class="form-group">
                     <label for="confirmPassword">Confirm Password</label>
                     <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="new-password" required>
+                    <small class="field-error" data-error-for="confirmPassword"></small>
                 </div>
             </div>
 

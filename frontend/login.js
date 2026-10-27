@@ -18,15 +18,15 @@ form.addEventListener("submit", async function (event) {
         const response = await fetch(`${API_URL}/auth/login`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
+            credentials: "include", 
             body: JSON.stringify({ matricNumber, password }),
         });
 
-        const data = await response.json().catch(() => ({}));
         if (!response.ok) {
+            const data = await response.json().catch(() => ({}));
             throw new Error(data.message || "Matric number or password is incorrect.");
         }
 
-        localStorage.setItem("token", data.token);
         window.location.href = "dashboard.html";
     } catch (error) {
         message.textContent = error.message === "Failed to fetch"
