@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dashboard.js" defer></script>
+</head>
+
+<body>
+    <div class="form-container wide">
+        <h1 id="fullName">Loading...</h1>
+        <p class="subtitle" data-field="matricNumber"></p>
+
+        <dl class="details">
+            <div><dt>Department</dt><dd data-field="department"></dd></div>
+            <div><dt>Level</dt><dd data-field="level"></dd></div>
+            <div><dt>Hostel</dt><dd data-field="hostel"></dd></div>
+            <div><dt>Gender</dt><dd data-field="gender"></dd></div>
+            <div><dt>Date of Birth</dt><dd data-field="dob"></dd></div>
+            <div><dt>Email</dt><dd data-field="email"></dd></div>
+            <div><dt>Phone</dt><dd data-field="phone"></dd></div>
+            <div><dt>Next of Kin</dt><dd><span data-field="kinName"></span>, <span data-field="kinPhone"></span></dd></div>
+        </dl>
+
+        <button type="button" id="logoutBtn">Log out</button>
+        <p id="message" role="status"></p>
+    </div>
+</body>
+</html>
